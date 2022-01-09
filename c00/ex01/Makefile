@@ -5,7 +5,7 @@ CFLAGS		=	-std=c++98 -Wall -Wextra -Werror
 RM			=	rm -f
 
 HEAD		=	User.hpp	phonebook.hpp
-SRCS		=	main.cpp	User.cpp	 commands.cpp
+SRCS		=	main.cpp	User.cpp	 commands.cpp	ft_atoi.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 .PHONY		:	all clean fclean re

@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sglossu/Desktop/c++/c00/ex01/User.cpp" "/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/User.cpp.o"
-  "/Users/sglossu/Desktop/c++/c00/ex01/commands.cpp" "/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/commands.cpp.o"
-  "/Users/sglossu/Desktop/c++/c00/ex01/main.cpp" "/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/main.cpp.o"
+  "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.cpp" "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/User.cpp.o"
+  "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/commands.cpp" "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/commands.cpp.o"
+  "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/ft_atoi.cpp" "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/ft_atoi.cpp.o"
+  "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/main.cpp" "/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sglossu/Desktop/c++/c00/ex01
+CMAKE_SOURCE_DIR = /Users/sglossu/Desktop/CPP-Modules/c00/ex01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ commands.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex01.dir/build.make CMakeFiles/ex01.dir/commands.cpp.s
 .PHONY : commands.cpp.s
 
+ft_atoi.o: ft_atoi.cpp.o
+.PHONY : ft_atoi.o
+
+# target to build an object file
+ft_atoi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex01.dir/build.make CMakeFiles/ex01.dir/ft_atoi.cpp.o
+.PHONY : ft_atoi.cpp.o
+
+ft_atoi.i: ft_atoi.cpp.i
+.PHONY : ft_atoi.i
+
+# target to preprocess a source file
+ft_atoi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex01.dir/build.make CMakeFiles/ex01.dir/ft_atoi.cpp.i
+.PHONY : ft_atoi.cpp.i
+
+ft_atoi.s: ft_atoi.cpp.s
+.PHONY : ft_atoi.s
+
+# target to generate assembly for a file
+ft_atoi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex01.dir/build.make CMakeFiles/ex01.dir/ft_atoi.cpp.s
+.PHONY : ft_atoi.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... commands.o"
 	@echo "... commands.i"
 	@echo "... commands.s"
+	@echo "... ft_atoi.o"
+	@echo "... ft_atoi.i"
+	@echo "... ft_atoi.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

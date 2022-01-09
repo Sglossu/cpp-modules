@@ -1,9 +1,5 @@
 #include "User.hpp"
 
-//User::User(const std::string &s, int a) : name(s), age(a) {}
-
-//User::User() {}
-
 //########################GETTTT#######################################
 
 const std::string &User::getFirstName() const {

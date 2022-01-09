@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sglossu/Desktop/c++/c00/ex01
+CMAKE_SOURCE_DIR = /Users/sglossu/Desktop/CPP-Modules/c00/ex01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ex01.dir/depend.make
@@ -68,48 +68,62 @@ include CMakeFiles/ex01.dir/flags.make
 
 CMakeFiles/ex01.dir/main.cpp.o: CMakeFiles/ex01.dir/flags.make
 CMakeFiles/ex01.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex01.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/main.cpp.o -c /Users/sglossu/Desktop/c++/c00/ex01/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex01.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/main.cpp.o -c /Users/sglossu/Desktop/CPP-Modules/c00/ex01/main.cpp
 
 CMakeFiles/ex01.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex01.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/c++/c00/ex01/main.cpp > CMakeFiles/ex01.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/CPP-Modules/c00/ex01/main.cpp > CMakeFiles/ex01.dir/main.cpp.i
 
 CMakeFiles/ex01.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex01.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/c++/c00/ex01/main.cpp -o CMakeFiles/ex01.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/CPP-Modules/c00/ex01/main.cpp -o CMakeFiles/ex01.dir/main.cpp.s
 
 CMakeFiles/ex01.dir/User.cpp.o: CMakeFiles/ex01.dir/flags.make
 CMakeFiles/ex01.dir/User.cpp.o: ../User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex01.dir/User.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/User.cpp.o -c /Users/sglossu/Desktop/c++/c00/ex01/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex01.dir/User.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/User.cpp.o -c /Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.cpp
 
 CMakeFiles/ex01.dir/User.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex01.dir/User.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/c++/c00/ex01/User.cpp > CMakeFiles/ex01.dir/User.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.cpp > CMakeFiles/ex01.dir/User.cpp.i
 
 CMakeFiles/ex01.dir/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex01.dir/User.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/c++/c00/ex01/User.cpp -o CMakeFiles/ex01.dir/User.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.cpp -o CMakeFiles/ex01.dir/User.cpp.s
 
 CMakeFiles/ex01.dir/commands.cpp.o: CMakeFiles/ex01.dir/flags.make
 CMakeFiles/ex01.dir/commands.cpp.o: ../commands.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex01.dir/commands.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/commands.cpp.o -c /Users/sglossu/Desktop/c++/c00/ex01/commands.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex01.dir/commands.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/commands.cpp.o -c /Users/sglossu/Desktop/CPP-Modules/c00/ex01/commands.cpp
 
 CMakeFiles/ex01.dir/commands.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex01.dir/commands.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/c++/c00/ex01/commands.cpp > CMakeFiles/ex01.dir/commands.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/CPP-Modules/c00/ex01/commands.cpp > CMakeFiles/ex01.dir/commands.cpp.i
 
 CMakeFiles/ex01.dir/commands.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex01.dir/commands.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/c++/c00/ex01/commands.cpp -o CMakeFiles/ex01.dir/commands.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/CPP-Modules/c00/ex01/commands.cpp -o CMakeFiles/ex01.dir/commands.cpp.s
+
+CMakeFiles/ex01.dir/ft_atoi.cpp.o: CMakeFiles/ex01.dir/flags.make
+CMakeFiles/ex01.dir/ft_atoi.cpp.o: ../ft_atoi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex01.dir/ft_atoi.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex01.dir/ft_atoi.cpp.o -c /Users/sglossu/Desktop/CPP-Modules/c00/ex01/ft_atoi.cpp
+
+CMakeFiles/ex01.dir/ft_atoi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex01.dir/ft_atoi.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sglossu/Desktop/CPP-Modules/c00/ex01/ft_atoi.cpp > CMakeFiles/ex01.dir/ft_atoi.cpp.i
+
+CMakeFiles/ex01.dir/ft_atoi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex01.dir/ft_atoi.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sglossu/Desktop/CPP-Modules/c00/ex01/ft_atoi.cpp -o CMakeFiles/ex01.dir/ft_atoi.cpp.s
 
 # Object files for target ex01
 ex01_OBJECTS = \
 "CMakeFiles/ex01.dir/main.cpp.o" \
 "CMakeFiles/ex01.dir/User.cpp.o" \
-"CMakeFiles/ex01.dir/commands.cpp.o"
+"CMakeFiles/ex01.dir/commands.cpp.o" \
+"CMakeFiles/ex01.dir/ft_atoi.cpp.o"
 
 # External object files for target ex01
 ex01_EXTERNAL_OBJECTS =
@@ -117,9 +131,10 @@ ex01_EXTERNAL_OBJECTS =
 ex01: CMakeFiles/ex01.dir/main.cpp.o
 ex01: CMakeFiles/ex01.dir/User.cpp.o
 ex01: CMakeFiles/ex01.dir/commands.cpp.o
+ex01: CMakeFiles/ex01.dir/ft_atoi.cpp.o
 ex01: CMakeFiles/ex01.dir/build.make
 ex01: CMakeFiles/ex01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ex01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ex01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +146,6 @@ CMakeFiles/ex01.dir/clean:
 .PHONY : CMakeFiles/ex01.dir/clean
 
 CMakeFiles/ex01.dir/depend:
-	cd /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sglossu/Desktop/c++/c00/ex01 /Users/sglossu/Desktop/c++/c00/ex01 /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug /Users/sglossu/Desktop/c++/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sglossu/Desktop/CPP-Modules/c00/ex01 /Users/sglossu/Desktop/CPP-Modules/c00/ex01 /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug /Users/sglossu/Desktop/CPP-Modules/c00/ex01/cmake-build-debug/CMakeFiles/ex01.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ex01.dir/depend
 

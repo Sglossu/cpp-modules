@@ -8,24 +8,36 @@ void ft_add(User *book, int *i)
 	std::cout << "Enter your first name: ";
 	std::string str;
 	std::cin >>	str;
+	if (std::cin.eof())
+		exit(0);
+	std::cin.clear();
 	t.setFirstName(str);
 
 	std::cout << "Enter your last name: ";
 	std::cin >>	str;
+	if (std::cin.eof())
+		exit(0);
+	std::cin.clear();
 	t.setLastName(str);
 
 	std::cout << "Enter your nickname: ";
 	std::cin >>	str;
+	if (std::cin.eof())
+		exit(0);
+	std::cin.clear();
 	t.setNickName(str);
 
 	std::cout << "Enter your number: ";
-	int 	number;
 	std::cin >>	str;
+	int		number;
 	number = ft_strisalpha(str);
 	t.setNumber(number);
 
 	std::cout << "Enter your darkest secret: ";
 	std::cin >>	str;
+	if (std::cin.eof())
+		exit(0);
+	std::cin.clear();
 	t.setSecret(str);
 
 	book[j % 8] = t;
@@ -109,6 +121,6 @@ int	ft_strisalpha(std::string str)
 		}
 		i++;
 	}
-	number = std::stoi(str);
+	number = ft_atoi(str);
 	return (number);
 }

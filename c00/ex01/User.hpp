@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 
+
 class User {
 private:
 	std::string first_name;
@@ -11,7 +12,6 @@ private:
 	std::string secret;
 	int 		number;
 public:
-//	User(const std::string &s, int a);
 
 	void setFirstName(const std::string &firstName);
 

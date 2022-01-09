@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ex01.dir/User.cpp.o"
   "CMakeFiles/ex01.dir/commands.cpp.o"
+  "CMakeFiles/ex01.dir/ft_atoi.cpp.o"
   "CMakeFiles/ex01.dir/main.cpp.o"
   "ex01"
   "ex01.pdb"

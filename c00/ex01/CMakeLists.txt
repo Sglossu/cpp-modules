@@ -3,4 +3,4 @@ project(ex01)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(ex01 main.cpp User.cpp User.hpp commands.cpp phonebook.hpp)
+add_executable(ex01 main.cpp User.cpp User.hpp commands.cpp phonebook.hpp ft_atoi.cpp)

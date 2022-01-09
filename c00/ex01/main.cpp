@@ -6,6 +6,9 @@ int main()
 	std::cout << "This is a phonebook. Please, write one of the commands: ADD, SEARCH or EXIT.\n";
 	std::string	rez;
 	std::cin >>	rez;
+	if (std::cin.eof())
+		exit(0);
+	std::cin.clear();
 
 	User	book[8];
 	int 	i = 0;
