@@ -3,7 +3,9 @@
 void ft_add(User *book, int *i)
 {
 	User	t;
-	int 	j = *i;
+	int 	j;
+
+	j = *i;
 
 	std::cout << "Enter your first name: ";
 	std::string str;
@@ -40,10 +42,7 @@ void ft_add(User *book, int *i)
 	std::cin.clear();
 	t.setSecret(str);
 
-	book[j % 8] = t;
-
-	if (*i < 8)
-		(*i)++;
+	book[*i] = t;
 }
 
 void ft_search(User *book, int len)

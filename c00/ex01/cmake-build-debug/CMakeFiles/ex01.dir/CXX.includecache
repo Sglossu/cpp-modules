@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.cpp
-User.hpp
-/Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.hpp
-
 /Users/sglossu/Desktop/CPP-Modules/c00/ex01/User.hpp
 iostream
 -
 string
 -
-
-/Users/sglossu/Desktop/CPP-Modules/c00/ex01/commands.cpp
-phonebook.hpp
-/Users/sglossu/Desktop/CPP-Modules/c00/ex01/phonebook.hpp
 
 /Users/sglossu/Desktop/CPP-Modules/c00/ex01/main.cpp
 phonebook.hpp

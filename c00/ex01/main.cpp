@@ -1,6 +1,5 @@
 #include "phonebook.hpp"
 
-
 int main()
 {
 	std::cout << "This is a phonebook. Please, write one of the commands: ADD, SEARCH or EXIT.\n";
@@ -12,12 +11,26 @@ int main()
 
 	User	book[8];
 	int 	i = 0;
+	int 	len = 0;
+	bool 	flag = false;
 
-	while (true) { //todo for
-		if (rez == "ADD")
+	while (true) {
+		if (rez == "ADD") {
 			ft_add(book, &i);
+			if (i >= 7 && !flag) {
+				i = 0;
+				len = 8;
+				flag = true;
+			}
+			else if (i < 7 && !flag) {
+				i++;
+				len++;
+			}
+			else
+				i++;
+		}
 		else if (rez == "SEARCH")
-			ft_search(book, i);
+			ft_search(book, len);
 		else if (rez == "EXIT")
 			exit(0);
 		else {
@@ -28,6 +41,7 @@ int main()
 			std::cin.clear();
 			continue ;
 		}
+
 		std::cout << "What else? (ADD, SEARCH, EXIT): ";
 		std::cin >>	rez;
 		if (std::cin.eof())

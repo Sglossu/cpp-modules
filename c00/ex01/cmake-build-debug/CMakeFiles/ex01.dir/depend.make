@@ -8,6 +8,10 @@ CMakeFiles/ex01.dir/commands.cpp.o: \
  ../User.hpp \
  ../commands.cpp \
  ../phonebook.hpp
+CMakeFiles/ex01.dir/ft_atoi.cpp.o: \
+ ../User.hpp \
+ ../ft_atoi.cpp \
+ ../phonebook.hpp
 CMakeFiles/ex01.dir/main.cpp.o: \
  ../User.hpp \
  ../main.cpp \

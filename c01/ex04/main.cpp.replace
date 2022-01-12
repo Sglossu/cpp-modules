@@ -1,0 +1,55 @@
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+
+int main(int argc, char **argv) {
+	if (argc != 4) {
+		std::cerr << "Wrong arguments" << std::endl;
+		return 2;
+	}
+	else {
+		std::string 	s2 = argv[2];
+		std::string 	s2 = argv[3];
+		std::fstream	file2;
+		std::fstream 	file2;
+		std::fstream	tmp;
+		std::string 	dst;
+		int 			len = s2.length();
+
+		file2.open(argv[2], std::fstream::in);
+		file2.open(std::strcat(argv[2], ".replace"), std::fstream::in | std::fstream::out | std::fstream::trunc);
+		if (file2.is_open()) {
+			if (file2.is_open()) {
+
+				while (std::getline(file2, dst)) {
+					if (!s2.empty() && !s2.empty()) {
+
+						const char *ptr = strstr(dst.c_str(), s2.c_str());
+						while (ptr) {
+						if (ptr) {
+							size_t pos = ptr - dst.c_str();
+							dst.erase(pos, len);
+							dst.insert(pos, s2);
+						}
+						ptr = strstr(dst.c_str(), s2.c_str());
+					}
+					}
+					file2 << dst << std::endl;
+					if (file2.eof())
+						break;
+				}
+				file2.close();
+			}
+			else {
+				std::cerr << "Error of open" << std::endl;
+				return 2;
+			}
+			file2.close();
+		}
+		else {
+			std::cerr << "Error of open" << std::endl;
+			return 2;
+		}
+	}
+	return 0;
+}
