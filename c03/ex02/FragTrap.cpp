@@ -1,42 +1,38 @@
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap() {
-	this->setHitpoints(100);
-	this->setName("Noname");
-	this->setEnergyPoints(100);
-	this->setAttackDamage(30);
-	std::cout << "Default constructor of ScavTrap called" << std::endl;
-};
+	this->name = "Noname";
+	this->hitpoints = 100;
+	this->energy_points = 50;
+	this->attack_damage = 20;
+	std::cout << "Default constructor of FragTrap called (" << name << ")" << std::endl;
+}
 
-FragTrap::FragTrap(std::string name) {
-	this->setHitpoints(100);
-	this->setName(name);
-	this->setEnergyPoints(100);
-	this->setAttackDamage(30);
-	std::cout << "Default constructor of ScavTrap called" << std::endl;
-};
+FragTrap::FragTrap(std::string name) : ClapTrap(name) {
+	this->name = name;
+	this->hitpoints = 100;
+	this->energy_points = 50;
+	this->attack_damage = 20;
+	std::cout << "Default constructor of FragTrap called (" << name << ")" << std::endl;
+}
 
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other) {}
 
 FragTrap::~FragTrap() {
-	std::cout << "Destructor of ScavTrap called" << std::endl;
+	std::cout << "Destructor of FragTrap called (" << name << ")" << std::endl;
 }
 
 FragTrap &FragTrap::operator=(const FragTrap &other) {
 	if (&other == this)
 		return (*this);
-	this->setHitpoints(other.getHitpoints());
-	this->setName(other.getName());
-	this->setEnergyPoints(other.getEnergyPoints());
-	this->setAttackDamage(other.getAttackDamage());
+	name = other.name;
+	hitpoints = other.hitpoints;
+	energy_points = other.energy_points;
+	attack_damage = other.attack_damage;
 	return (*this);
 }
 
-void FragTrap::attack(const std::string &target) {
-	std::cout << "FragTrap" << this->getName() << " attack " << target << \
-	", on " << this->getAttackDamage() << " points." << std::endl;
-}
-
 void FragTrap::highFivesGuys() {
-	std::cout << "FragTrap " << this->getName() << \
+	std::cout << "FragTrap " << name << \
 	" hive Five!" << std::endl;
 }

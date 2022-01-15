@@ -1,69 +1,42 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : name("No name"), hitpoints(10), energy_points(10), attack_damage(0) {}
-
-ClapTrap::ClapTrap(std::string name) : name(name), hitpoints(10), energy_points(10), attack_damage(0) {
-	std::cout << "Default constructor of ClapTrap called" << std::endl;
+ClapTrap::ClapTrap() : name("Noname"), hitpoints(10), energy_points(10), attack_damage(0) {
+	std::cout << "Default constructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
-ClapTrap::ClapTrap(const ClapTrap &other) {
-	this->name = other.name;
-	this->hitpoints = other.hitpoints;
-	this->energy_points = other.energy_points;
-	this->attack_damage = other.attack_damage;
-	std::cout << "Copy constructor called\n";
+ClapTrap::ClapTrap(std::string name) :
+								name(name),
+								hitpoints(10),
+								energy_points(10),
+								attack_damage(0) {
+	std::cout << "Default constructor of ClapTrap called (" << name << ")" << std::endl;
+}
+
+ClapTrap::ClapTrap(const ClapTrap &other) :
+								name(other.name),
+								hitpoints(other.hitpoints),
+								energy_points(other.energy_points),
+								attack_damage(other.attack_damage) {
+	std::cout << "Copy constructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
 	if (&other == this)
 		return (*this);
-	this->name = other.name;
-	this->hitpoints = other.hitpoints;
-	this->energy_points = other.energy_points;
-	this->attack_damage = other.attack_damage;
+	name = other.name;
+	hitpoints = other.hitpoints;
+	energy_points = other.energy_points;
+	attack_damage = other.attack_damage;
 	return (*this);
-
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "Destructor of ClapTrap called" << std::endl;
-}
-
-const std::string &ClapTrap::getName() const {
-	return name;
-}
-
-int ClapTrap::getHitpoints() const {
-	return hitpoints;
-}
-
-int ClapTrap::getEnergyPoints() const {
-	return energy_points;
-}
-
-int ClapTrap::getAttackDamage() const {
-	return attack_damage;
+	std::cout << "Destructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target) {
-	std::cout << "ClapTrap" << name << " attack " << target << \
+	std::cout << name << " attack " << target <<
 	", on " << attack_damage << " points." << std::endl;
-}
-
-void ClapTrap::setName(const std::string &name) {
-	ClapTrap::name = name;
-}
-
-void ClapTrap::setHitpoints(int hitpoints) {
-	ClapTrap::hitpoints = hitpoints;
-}
-
-void ClapTrap::setEnergyPoints(int energyPoints) {
-	energy_points = energyPoints;
-}
-
-void ClapTrap::setAttackDamage(int attackDamage) {
-	attack_damage = attackDamage;
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
@@ -94,3 +67,5 @@ void ClapTrap::takeDamage(unsigned int amount) {
 		std::cout << std::endl;
 	}
 }
+
+

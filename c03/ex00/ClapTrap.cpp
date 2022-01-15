@@ -1,13 +1,15 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : name("Noname"), hitpoints(10), energy_points(10), attack_damage(0) {}
+ClapTrap::ClapTrap() : name("Noname"), hitpoints(10), energy_points(10), attack_damage(0) {
+	std::cout << "Default constructor of ClapTrap called (" << name << ")" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string name) :
 								name(name),
 								hitpoints(10),
 								energy_points(10),
 								attack_damage(0) {
-	std::cout << "Default constructor of ClapTrap called" << std::endl;
+	std::cout << "Default constructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other) :
@@ -15,7 +17,7 @@ ClapTrap::ClapTrap(const ClapTrap &other) :
 								hitpoints(other.hitpoints),
 								energy_points(other.energy_points),
 								attack_damage(other.attack_damage) {
-	std::cout << "Copy constructor called\n";
+	std::cout << "Copy constructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
@@ -26,27 +28,10 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
 	energy_points = other.energy_points;
 	attack_damage = other.attack_damage;
 	return (*this);
-
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "Destructor of ClapTrap called" << std::endl;
-}
-
-const std::string &ClapTrap::getName() const {
-	return name;
-}
-
-int ClapTrap::getHitpoints() const {
-	return hitpoints;
-}
-
-int ClapTrap::getEnergyPoints() const {
-	return energy_points;
-}
-
-int ClapTrap::getAttackDamage() const {
-	return attack_damage;
+	std::cout << "Destructor of ClapTrap called (" << name << ")" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target) {
