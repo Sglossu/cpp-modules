@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ClapTrap.cpp
+ClapTrap.hpp
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ClapTrap.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ClapTrap.hpp
+iostream
+-
+
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ScavTrap.cpp
+ScavTrap.hpp
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ScavTrap.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ScavTrap.hpp
+ClapTrap.hpp
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ClapTrap.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/main.cpp
+ScavTrap.hpp
+/Users/sglossu/Desktop/CPP-Modules/c03/ex01/ScavTrap.hpp
+

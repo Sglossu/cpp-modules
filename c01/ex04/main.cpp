@@ -29,18 +29,14 @@ int main(int argc, char **argv) {
 					if (!s1.empty() && !s2.empty() && strcmp(s1.c_str(), s2.c_str())) {
 
 						const char *ptr = strstr(dst.c_str(), s1.c_str());
-						if (ptr)
-							std::cout << "ptr: |" << ptr << "|" << std::endl;
 						while (ptr) {
 							if (ptr) {
 								size_t pos = ptr - dst.c_str();
 								dst.erase(pos, len);
 								dst.insert(pos, s2);
-								std::cout << "pos: " << pos << std::endl;
 							}
-							ptr = strstr(dst.c_str(), s1.c_str());
-							if (ptr)
-								std::cout << "ptr: |" << ptr << "|" << std::endl;
+							ptr = ptr + s2.length();
+							ptr = strstr(ptr, s1.c_str());
 						}
 					}
 					file2 << dst << std::endl;
