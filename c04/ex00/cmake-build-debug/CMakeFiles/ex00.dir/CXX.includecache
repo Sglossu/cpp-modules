@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.cpp
+Animal.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.hpp
+iostream
+-
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Cat.cpp
+Cat.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Cat.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Cat.hpp
+Animal.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Dog.cpp
+Dog.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Dog.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Dog.hpp
+Animal.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.hpp
+
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/main.cpp
+iostream
+-
+Animal.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Animal.hpp
+Cat.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Cat.hpp
+Dog.hpp
+/Users/sglossu/Desktop/CPP-Modules/c04/ex00/Dog.hpp
+
