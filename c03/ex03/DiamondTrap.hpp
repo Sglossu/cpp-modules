@@ -1,5 +1,7 @@
 #pragma once
 #include "FragTrap.hpp"
+#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 class DiamondTrap : public ScavTrap, public FragTrap {
 private:
@@ -7,14 +9,18 @@ private:
 public:
 	DiamondTrap();
 	DiamondTrap(std::string name);
+
+	const std::string &getName() const;
+	int getHitpoints() const;
+	int getEnergyPoints() const;
+	int getAttackDamage() const;
+
+
 	DiamondTrap(const DiamondTrap &other);
 	DiamondTrap& operator=(const DiamondTrap& other);
 	~DiamondTrap();
 
 	using ScavTrap::attack;
-
-	const std::string &getName() const;
-	void setName(const std::string &name);
 
 	void 	whoAmI();
 

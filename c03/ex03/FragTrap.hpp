@@ -1,5 +1,5 @@
 #pragma once
-#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 class FragTrap : virtual public ClapTrap {
 public:
@@ -9,6 +9,5 @@ public:
 	FragTrap& operator=(const FragTrap& other);
 	~FragTrap();
 
-	void attack(std::string const &target);
 	void highFivesGuys(void);
 };

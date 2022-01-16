@@ -13,8 +13,7 @@ CMakeFiles/ex03.dir/DiamondTrap.cpp.o: \
 CMakeFiles/ex03.dir/FragTrap.cpp.o: \
  ../ClapTrap.hpp \
  ../FragTrap.cpp \
- ../FragTrap.hpp \
- ../ScavTrap.hpp
+ ../FragTrap.hpp
 CMakeFiles/ex03.dir/ScavTrap.cpp.o: \
  ../ClapTrap.hpp \
  ../ScavTrap.cpp \

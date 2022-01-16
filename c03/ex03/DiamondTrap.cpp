@@ -1,37 +1,32 @@
 #include "DiamondTrap.hpp"
 
 DiamondTrap::DiamondTrap() : ScavTrap(), FragTrap() {
-	this->setHitpoints(FragTrap::getHitpoints());
-//	this->setName("Noname");
-	this->setEnergyPoints(ScavTrap::getEnergyPoints());
-	this->setAttackDamage(FragTrap::getAttackDamage());
+	this->hitpoints = FragTrap::hitpoints;
+	attack_damage = FragTrap::attack_damage;
+	energy_points = ScavTrap().getEnergyPoints();
 	std::cout << "Default constructor of DiamondTrap called (" << \
-	this->name << " )" << std::endl;
+	this->name << ")" << std::endl;
 };
 
-DiamondTrap::DiamondTrap(std::string name) :
-	ClapTrap(name + "_clap_name") {
-
-	this->setHitpoints(FragTrap::getHitpoints());
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(), FragTrap() {
 	this->name = name;
-	this->setEnergyPoints(ScavTrap::getEnergyPoints());
-	this->setAttackDamage(FragTrap::getAttackDamage());
+	hitpoints = FragTrap::hitpoints;
+	attack_damage = FragTrap::attack_damage;
+	energy_points = ScavTrap().getEnergyPoints();
 	std::cout << "Default constructor of DiamondTrap called (" << \
-	this->name << " )" << std::endl;
-};
-
+	this->name << ")" << std::endl;
+}
 
 DiamondTrap::~DiamondTrap() {
 	std::cout << "Destructor of DiamondTrap called (" << \
-	this->getName() << " )" << std::endl;
+	name << ")" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &other) :
-	ClapTrap(other.getName()), ScavTrap(other.getName()), FragTrap(other.getName())  {
-	this->setHitpoints(other.getHitpoints());
-	this->name = other.name;
-	this->setEnergyPoints(other.getEnergyPoints());
-	this->setAttackDamage(other.getAttackDamage());
+DiamondTrap::DiamondTrap(const DiamondTrap &other) {
+	name = other.name;
+	hitpoints = other.hitpoints;
+	energy_points = other.energy_points;
+	attack_damage = other.attack_damage;
 	std::cout << "Copy constructor of FragTrap called (" << \
 	this->name << " )" << std::endl;;
 }
@@ -39,21 +34,21 @@ DiamondTrap::DiamondTrap(const DiamondTrap &other) :
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &other) {
 	if (&other == this)
 		return (*this);
-	this->setHitpoints(other.getHitpoints());
-	this->name = other.name;
-	this->setEnergyPoints(other.getEnergyPoints());
-	this->setAttackDamage(other.getAttackDamage());
+	name = other.name;
+	hitpoints = other.hitpoints;
+	energy_points = other.energy_points;
+	attack_damage = other.attack_damage;
 	return (*this);
 }
 
 void DiamondTrap::whoAmI() {
-	std::cout << "I am " << this->name << " (of " << ClapTrap::getName() << ")" << std::endl;
+	std::cout << "I am " << this->name << std::endl;
 }
 
-const std::string &DiamondTrap::getName() const {
-	return name;
-}
+const std::string &DiamondTrap::getName() const { return name; }
 
-void DiamondTrap::setName(const std::string &name) {
-	DiamondTrap::name = name;
-}
+int DiamondTrap::getHitpoints() const { return hitpoints; }
+
+int DiamondTrap::getEnergyPoints() const { return energy_points; }
+
+int DiamondTrap::getAttackDamage() const { return attack_damage; }
