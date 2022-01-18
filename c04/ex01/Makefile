@@ -1,11 +1,11 @@
-NAME		=	ex00
+NAME		=	ex01
 
 CC			=	c++
 CFLAGS		=	-std=c++98 -Wall -Wextra -Werror
 RM			=	rm -f
 
-HEAD		=	Cat.hpp		Dog.hpp		Animal.hpp	WrongAnimal.hpp		WrongCat.hpp
-SRCS		=	main.cpp	Cat.cpp		Dog.cpp		Animal.cpp			WrongCat.cpp	WrongAnimal.cpp
+HEAD		=	Cat.hpp		Dog.hpp		Animal.hpp	Brain.hpp
+SRCS		=	main.cpp	Cat.cpp		Dog.cpp		Animal.cpp		Brain.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 .PHONY		:	all clean fclean re

@@ -1,12 +1,8 @@
 #include <iostream>
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include "WrongCat.hpp"
-
-
 
 int main() {
-	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	std::cout << "_______________________________________" << std::endl;
@@ -17,19 +13,28 @@ int main() {
 	std::cout << i->getType() << " ";
 	i->makeSound();
 
-	std::cout << meta->getType() << " ";
-	meta->makeSound();
 	std::cout << "_______________________________________" << std::endl;
 
-	const WrongAnimal*	w_meta = new WrongAnimal();
-	const WrongCat*		w_j	= new WrongCat();
+	((Cat*)j)->setIdea("Wow");
+	((Cat*)i)->setIdea("Hello!");
 
-	std::cout << w_meta->getType() << " ";
-	w_meta->makeSound();
-
-	std::cout << w_j->getType() << " " ;
-	w_j->makeSound();
+	std::cout << ((Cat*)j)->getIdea() << std::endl;
+	std::cout << ((Cat*)i)->getIdea() << std::endl;
 	std::cout << "_______________________________________" << std::endl;
 
-	delete j, delete i, delete meta, delete w_j, delete w_meta;
+	const Animal* zoo[10];
+
+	for (int i = 0; i < 4; i++) {
+		if (i < 2)
+			zoo[i] = new Cat();
+		else
+			zoo[i] = new Dog();
+	}
+
+	std::cout << "_______________________________________" << std::endl;
+	delete j, delete i;
+	std::cout << "_______________________________________" << std::endl;
+	for (int i = 0; i < 4; i++) {
+		delete zoo[i];
+	}
 }
