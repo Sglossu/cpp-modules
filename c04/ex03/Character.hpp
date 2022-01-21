@@ -6,8 +6,8 @@ class Character : public ICharacter {
 protected:
 	AMateria*	inventory[4];
 	std::string	name;
-public:
 	Character();
+public:
 	Character(std::string name);
 	~Character();
 	Character(Character const &other);

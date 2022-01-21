@@ -31,7 +31,7 @@ void ft_add(User *book, int *i)
 
 	std::cout << "Enter your number: ";
 	std::cin >>	str;
-	int		number;
+	int		number; // считывать в строчку, иначе переполнение инта
 	number = ft_strisalpha(str);
 	t.setNumber(number);
 
@@ -120,6 +120,6 @@ int	ft_strisalpha(std::string str)
 		}
 		i++;
 	}
-	number = ft_atoi(str);
+	number = std::atoi(str);
 	return (number);
 }

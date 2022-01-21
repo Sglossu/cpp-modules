@@ -2,13 +2,15 @@
 #include <iostream>
 #include "ICharacter.hpp"
 
+class ICharacter;
+
 class AMateria{
 protected:
 	std::string type;
 public:
 	AMateria();
 	AMateria(std::string const & type);
-	~AMateria();
+	virtual ~AMateria();
 	AMateria(AMateria const &other);
 	AMateria & operator=(AMateria const &other);
 

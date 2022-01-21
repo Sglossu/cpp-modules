@@ -12,7 +12,7 @@ int main() {
 	std::cout << "_______________________________________" << std::endl;
 
 	std::cout << j->getType() << " " ;
-	i->makeSound();
+	j->makeSound();
 
 	std::cout << i->getType() << " ";
 	i->makeSound();

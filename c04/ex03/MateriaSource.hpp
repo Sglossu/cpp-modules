@@ -1,7 +1,7 @@
 #pragma once
 #include "IMateriaSource.hpp"
 
-class MateriaSource {
+class MateriaSource : public IMateriaSource {
 protected:
 	AMateria	*inventory[4];
 public:
