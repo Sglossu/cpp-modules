@@ -7,7 +7,7 @@ Span::Span(unsigned int n) : max_size(n) {
 Span::Span(const Span &other) {
 	array = new std::vector<int>;
 	max_size = other.max_size;
-	for (int i = 0; i < static_cast<int>(other.max_size); ++i)
+	for (size_t i = 0; i < other.max_size; ++i)
 		array[i] = other.array[i];
 }
 
@@ -17,7 +17,7 @@ const Span &Span::operator=(const Span &other) {
 	delete array;
 	array = new std::vector<int>;
 	max_size = other.max_size;
-	for (int i = 0; i < static_cast<int>(other.max_size); ++i)
+	for (size_t i = 0; i < other.max_size; ++i)
 		array[i] = other.array[i];
 	return (*this);
 }
@@ -28,10 +28,10 @@ int Span::shortestSpan() {
 	int rez = INT_MAX;
 	int diff;
 
-	if (max_size < 2)
+	if (array->size() < 2)
 		throw SpanIsTooShort();
 
-	for (int i = 0; i < static_cast<int>(array->size()) - 1; ++i) {
+	for (size_t i = 0; i < array->size() - 1; ++i) {
 		diff = std::abs((*array)[i] - (*array)[i + 1]);
 		if (diff < rez)
 			rez = diff;
@@ -41,7 +41,7 @@ int Span::shortestSpan() {
 }
 
 int Span::longestSpan() {
-	if (max_size < 2)
+	if (array->size() < 2)
 		throw SpanIsTooShort();
 
 	int a = *max_element(array->begin(), array->end());
@@ -54,6 +54,15 @@ void Span::addNumber(int nb) {
 	if (array->size() >= max_size)
 		throw SpanIsFull();
 	array->push_back(nb);
+}
+
+void Span::addNumber(std::vector<int>::iterator start, std::vector<int>::iterator finish)
+{
+	size_t dist = std::distance(start, finish);
+
+	if (dist > max_size)
+		throw std::out_of_range("Span cannot be added, because out of range");
+	array->insert(array->begin(), start, finish);
 }
 
 const char* Span::SpanIsFull::what() const throw() { return ("Span is already full"); }

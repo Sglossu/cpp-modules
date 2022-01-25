@@ -4,7 +4,7 @@ int main() {
 
 	std::vector<int> vector;
 	std::vector<int>::iterator v_it;
-//	int nb = 100;
+	// int nb = 100;
 	int nb = 3;
 	std::cout << "nb: " << nb << std::endl;
 	for (int i = 2; i < 12; ++i)

@@ -19,4 +19,7 @@ public:
 	class SpanIsFull : public std::exception { virtual const char* what() const throw(); };
 	class SpanIsTooShort : public std::exception { virtual const char* what() const throw(); };
 
+	void	addNumber(std::vector<int>::iterator start, std::vector<int>::iterator finish);
+
+
 };
