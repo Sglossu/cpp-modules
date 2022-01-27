@@ -21,5 +21,4 @@ public:
 
 	void	addNumber(std::vector<int>::iterator start, std::vector<int>::iterator finish);
 
-
 };
